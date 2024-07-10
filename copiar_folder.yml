@@ -1,0 +1,10 @@
+---
+- name: Copy folder
+  hosts: windows
+  tasks:
+    - name: Copy folder from C:\source_folder to D:\destination_folder
+      win_copy:
+        src: D:\wbsnet
+        dest: D:\copia
+        remote_src: yes
+        force: yes
