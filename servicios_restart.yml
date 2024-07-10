@@ -1,0 +1,13 @@
+---
+- name: Arrancar un servicio
+  hosts: windows
+  tasks:
+  - name: Detener servicio
+    ansible.windows.win_service:
+      name: Audiosrv
+      state: stopped
+
+  - name: Arrancar servicio
+    ansible.windows.win_service:
+      name: Audiosrv
+      state: started
