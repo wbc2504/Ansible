@@ -1,6 +1,6 @@
 ---
 - name: Copy folder
-  hosts: windows
+  hosts: maquina
   tasks:
     - name: Copy folder from C:\source_folder to D:\destination_folder
       win_copy:
