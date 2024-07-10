@@ -1,0 +1,9 @@
+---
+- name: Restart IIS
+  hosts: windows
+  tasks:
+    - name: Restart IIS services
+      win_shell: iisreset /stop
+      args:
+        chdir: C:\Windows\System32\inetsrv
+      register: iisreset_result
