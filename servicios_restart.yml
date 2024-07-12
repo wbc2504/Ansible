@@ -1,6 +1,6 @@
 ---
 - name: Arrancar un servicio
-  hosts: windows
+  hosts: maquina
   tasks:
   - name: Detener servicio
     ansible.windows.win_service:
