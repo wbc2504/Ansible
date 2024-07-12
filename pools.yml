@@ -1,0 +1,8 @@
+---
+- name: stop pool
+  hosts: windows  # Define the host here
+  tasks:
+    - name: Stop an application pool
+      community.windows.win_iis_webapppool:
+        name: Prueba
+        state: started
