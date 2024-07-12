@@ -1,9 +1,8 @@
 ---
 - name: stop pool
-  hosts: maquina  # Define the host group here
-  gather_facts: no  # Opcional: Deshabilitar la recopilación de hechos si no es necesario
+  hosts: maquina  # Define the host here
   tasks:
     - name: Stop an application pool
       community.windows.win_iis_webapppool:
-        name: 'Prueba'  # Nombre del pool de aplicaciones
-        state: stopped  # Cambiado a 'stopped' como en el ejemplo inicial
+        name: Prueba
+        state: started
