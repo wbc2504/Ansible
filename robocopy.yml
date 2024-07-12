@@ -4,7 +4,7 @@
   tasks:
    - name: sincronizar archivos
      community.windows.win_robocopy:
-       src: "D:\\wbsnet"
+       src: "D:\wbsnet"
        dest: "P:\CGC\PROYECTOS - CONTRATOS\Contratos\Vigentes\ENLACE OPERATIVO\Modelo de Operativo\Copia"
        purge: false
        flags: /S
