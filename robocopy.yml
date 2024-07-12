@@ -1,5 +1,5 @@
 - name: Sync the contents of one directory to another, including subdirectories
   community.windows.win_robocopy:
     src: D:\wbsnet
-    dest: "P:\CGC\PROYECTOS - CONTRATOS\Contratos\Vigentes\ENLACE OPERATIVO\Modelo de Operativo\Copia"
+    dest: P:\CGC\PROYECTOS - CONTRATOS\Contratos\Vigentes\ENLACE OPERATIVO\Modelo de Operativo\Copia
     recurse: yes
