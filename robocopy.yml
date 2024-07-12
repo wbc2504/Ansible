@@ -1,6 +1,6 @@
 ---
 - name: robocopy
-  hosts: windows
+  hosts: maquina
   tasks:
    - name: sincronizar archivos
      community.windows.win_robocopy:
