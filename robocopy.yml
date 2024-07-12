@@ -1,10 +1,5 @@
----
-- name: robocopy
-  hosts: maquina
-  tasks:
-   - name: sincronizar archivos
-     community.windows.win_robocopy:
-       src: "D:\\wbsnet"
-       dest: "P:\\CGC\\PROYECTOS - CONTRATOS\\Contratos\\Vigentes\\ENLACE OPERATIVO\\Modelo de Operativo\\Copia"
-       purge: false
-       flags: /S
+- name: Sync the contents of one directory to another, including subdirectories
+  community.windows.win_robocopy:
+    src: D:\wbsnet
+    dest: "P:\CGC\PROYECTOS - CONTRATOS\Contratos\Vigentes\ENLACE OPERATIVO\Modelo de Operativo\Copia"
+    recurse: yes
