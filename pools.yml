@@ -1,6 +1,6 @@
 ---
 - name: stop pool
-  hosts: windows  # Define the host group here
+  hosts: maquina  # Define the host group here
   gather_facts: no  # Opcional: Deshabilitar la recopilación de hechos si no es necesario
   tasks:
     - name: Stop an application pool
