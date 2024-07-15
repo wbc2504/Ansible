@@ -5,9 +5,9 @@
   - name: Detener servicio
     ansible.windows.win_service:
       name: Audiosrv
-      state: stopped
-
-  - name: Arrancar servicio
-    ansible.windows.win_service:
-      name: Audiosrv
       state: started
+
+#  - name: Arrancar servicio
+#    ansible.windows.win_service:
+#      name: Audiosrv
+#      state: started
