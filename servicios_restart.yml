@@ -2,7 +2,7 @@
 - name: Arrancar un servicio
   hosts: maquina
   tasks:
-  - name: Detener servicio
+  - name: Arrancar servicio
     ansible.windows.win_service:
       name: Audiosrv
       state: started
