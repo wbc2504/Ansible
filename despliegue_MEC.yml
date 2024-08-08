@@ -15,13 +15,13 @@
     - name: copiar carpeta ApiMec
       win_copy:
          src: /opt/windows/despliegue_MEC_Agosto8_2024/ACTIVIDADES/ApiMEC/
-         dest: E:\Pruebas\ApiMec
+         dest: E:\Pruebas\ApiMec\
          force: yes
          
     - name: copiar carpeta 
       win_copy:
          src: /opt/windows/despliegue_MEC_Agosto8_2024/ACTIVIDADES/MEC/
-         dest: E:\Pruebas\Mec
+         dest: E:\Pruebas\Mec\
          force: yes
     
     - name: Arrancar pool PoolMec
