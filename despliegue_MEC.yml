@@ -1,6 +1,6 @@
 ---
 - name: Despliegue MEC
-  hosts: transversales
+  hosts: PRUEBA
   tasks:
     - name: Detener pool PoolApiMec
       community.windows.win_iis_webapppool:
