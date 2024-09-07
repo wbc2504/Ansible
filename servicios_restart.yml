@@ -1,6 +1,6 @@
 ---
 - name: Arrancar un servicio
-  hosts: prueba
+  hosts: Capa media
   tasks:
   - name: Arrancar servicio
     ansible.windows.win_service:
