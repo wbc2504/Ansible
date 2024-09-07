@@ -1,6 +1,6 @@
 ---
 - name: Arrancar un servicio
-  hosts: prueba
+  hosts: dllo
   tasks:
   - name: Arrancar servicio
     ansible.windows.win_service:
