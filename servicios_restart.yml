@@ -1,6 +1,6 @@
 ---
 - name: Arrancar un servicio
-  hosts: TSERV-BTATRAPP1
+  hosts: prueba
   tasks:
   - name: Arrancar servicio
     ansible.windows.win_service:
